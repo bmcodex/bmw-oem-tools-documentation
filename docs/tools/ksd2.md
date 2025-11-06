@@ -1,3 +1,10 @@
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+# 🇬🇧 English version
 # KSD2 (Kosten- und Zeitdaten)
 
 ## 1. Title and Short Description
@@ -70,3 +77,80 @@ KSD2 is used by **Service Advisors** and **Warranty Administrators** to manage t
 
 ---
 *See also: [AOS](../tools/aos.md), [Glossary](../glossary.md)*
+
+
+
+# 🇵🇱 Polska wersja
+# KSD2 (Kosten- und Zeitdaten)
+
+## 1. Tytuł i krótki opis
+
+**KSD2** (Kosten- und Zeitdaten – dane kosztowe i czasowe) to oficjalna aplikacja Grupy BMW służąca do określania standardowych czasów pracy oraz kosztów dla operacji serwisowych i naprawczych. Jest kluczowym narzędziem dla doradców serwisowych i techników, umożliwiającym dokładne przygotowanie wycen oraz rozliczeń gwarancyjnych.
+
+## 2. Cel / Zastosowania
+
+KSD2 wykorzystywany jest w administracyjnych i finansowych aspektach procesu serwisowego.
+
+*   **Wyceny prac:** Generowanie dokładnych kosztorysów napraw i czynności serwisowych na podstawie znormalizowanych czasów roboczych.  
+*   **Roszczenia gwarancyjne:** Udostępnianie kodów i czasów pracy wymaganych przy składaniu roszczeń gwarancyjnych do BMW AG.  
+*   **Planowanie serwisu:** Pomoc w planowaniu i harmonogramowaniu wizyt serwisowych w oparciu o przewidywany czas wykonania.  
+
+## 3. Obsługiwane generacje pojazdów
+
+KSD2 zawiera dane dla wszystkich obecnych i wcześniejszych modeli pojazdów Grupy BMW.
+
+## 4. Interfejsy i protokoły
+
+KSD2 działa zazwyczaj jako samodzielna aplikacja lub jako część systemu zarządzania serwisem (**DMS – Dealer Management System**).
+
+*   **Dostęp sieciowy:** Wymaga połączenia sieciowego w celu pobierania aktualizacji danych i synchronizacji z serwerami BMW.  
+
+## 5. Instalacja i dostęp
+
+KSD2 jest zwykle instalowany jako integralny element systemu DMS w autoryzowanych serwisach.
+
+*   **Dostęp legalny:** Ograniczony wyłącznie do autoryzowanych dealerów i partnerów serwisowych BMW Group.  
+
+## 6. Ogólny przebieg pracy / Typowe procedury
+
+1.  **Identyfikacja pojazdu:** Wprowadź numer **VIN** (Vehicle Identification Number).  
+2.  **Wybór naprawy:** Wybierz konkretną czynność serwisową (np. „Wymiana przednich klocków hamulcowych”).  
+3.  **Pobranie danych:** KSD2 pobiera oficjalny czas roboczy (w jednostkach roboczych lub minutach) oraz odpowiadający mu kod operacji.  
+4.  **Wycena / rozliczenie:** Dane są wykorzystywane do przygotowania kosztorysu dla klienta lub zgłoszenia gwarancyjnego.  
+
+## 7. Kluczowe ekrany / Elementy interfejsu
+
+*   **Wyszukiwarka kodów roboczych:** Umożliwia wyszukiwanie konkretnych czynności serwisowych według nazwy lub numeru.  
+*   **Wyświetlanie jednostek czasu:** Pokazuje standardowy czas wykonania danej operacji zgodnie z normami BMW.  
+
+## 8. Bezpieczeństwo i ryzyka
+
+Główne ryzyko stanowi korzystanie z nieaktualnych danych, co może prowadzić do błędnych wycen lub odrzuconych roszczeń gwarancyjnych.
+
+*   **Dokładność danych:** Należy regularnie synchronizować bazę danych KSD2 z serwerami BMW AG.  
+
+## 9. Rozwiązywanie problemów / Typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **Niezgodność danych** | Dane KSD2 różnią się od aktualnych informacji BMW. | Wykonaj aktualizację bazy danych poprzez synchronizację z serwerem BMW. |
+
+## 10. Przykłady i uwagi praktyczne
+
+*   **Kody robocze:** KSD2 dostarcza unikalne kody dla każdej czynności serwisowej, które są niezbędne do rozliczeń wewnętrznych oraz fakturowania usług.  
+*   **Normy czasowe:** Wszystkie wartości są standaryzowane przez BMW, co umożliwia jednolite planowanie pracy w całej sieci serwisowej.  
+
+## 11. Źródła / Dalsze informacje
+
+*   [1] **BMW Dealer Management System Documentation:** Dokumentacja integracji KSD2 z systemem DMS.  
+
+## 12. Dziennik zmian / Wersjonowanie
+
+Dane KSD2 są regularnie aktualizowane, aby odzwierciedlać zmiany w procedurach naprawczych oraz wprowadzenie nowych modeli pojazdów.
+
+## 13. Rola
+
+KSD2 jest wykorzystywany przez **doradców serwisowych**, **pracowników administracji serwisu** oraz **specjalistów ds. gwarancji** do zarządzania czasem i kosztami operacji serwisowych.
+
+---
+*Zobacz także: [AOS](../tools/aos.md), [Glosariusz](../glossary.md)*

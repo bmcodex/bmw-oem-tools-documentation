@@ -1,3 +1,10 @@
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+# 🇬🇧 English version
 # ISPI Next (Integrated Service Processes Initiative)
 
 ## 1. Title and Short Description
@@ -80,3 +87,88 @@ ISPI Next is the **Central Platform** used by all authorized BMW service personn
 
 ---
 *See also: [ISTA/D](../tools/ista-d.md), [ISTA/P](../tools/ista-p.md), [Glossary](../glossary.md)*
+
+
+# 🇵🇱 Polska wersja
+# ISPI Next (Integrated Service Processes Initiative)
+
+## 1. Tytuł i krótki opis
+
+**ISPI Next** (Integrated Service Processes Initiative) to kompleksowa, zintegrowana platforma opracowana przez Grupę BMW do zarządzania wszystkimi aspektami procesu serwisowego po sprzedaży. Stanowi centralny punkt dostępu do wszystkich oficjalnych aplikacji serwisowych, w tym **ISTA/D** (diagnostyka) oraz **ISTA/P** (programowanie), zapewniając jednolite środowisko pracy i zarządzania danymi.
+
+## 2. Cel / Zastosowania
+
+ISPI Next stanowi podstawę nowoczesnego procesu serwisowego BMW.
+
+*   **Zunifikowany interfejs:** Zapewnia jeden punkt dostępu do wszystkich aplikacji serwisowych, usprawniając pracę technika.
+*   **Zarządzanie danymi:** Odpowiada za obsługę danych pojazdu, historii serwisowej, informacji technicznych oraz danych programowania (**P-Data**).
+*   **Hosting aplikacji:** Zarządza instalacją i aktualizacjami kluczowych aplikacji, takich jak **ISTA/D** i **ISTA/P**.
+*   **Integracja sieciowa:** Zapewnia płynną komunikację pomiędzy komputerem serwisowym, interfejsem **ICOM** i serwerami zaplecza BMW.
+
+## 3. Obsługiwane generacje pojazdów
+
+Jako platforma, ISPI Next obsługuje wszystkie generacje pojazdów, które są wspierane przez zainstalowane aplikacje (**ISTA/D** i **ISTA/P**).
+
+| Generacja | Obsługiwane przez aplikacje | Uwagi |
+| :--- | :--- | :--- |
+| **Seria E** | Tak (przez ISTA/D, ISTA/P) | Wymaga ICOM (D-CAN) |
+| **Seria F/G/I** | Tak (przez ISTA/D, ISTA/P) | Optymalizowana pod ICOM NEXT (ENET) |
+
+## 4. Interfejsy i protokoły
+
+ISPI Next zarządza komunikacją między komputerem serwisowym a interfejsem pojazdu.
+
+*   **ICOM Manager:** Kluczowy komponent ISPI Next odpowiedzialny za połączenie i rezerwację urządzenia **ICOM**.
+*   **Protokoły sieciowe:** Wykorzystuje standardowe protokoły sieciowe do komunikacji z zapleczem BMW w celu synchronizacji danych i pobierania aktualizacji oprogramowania.
+
+## 5. Instalacja i dostęp
+
+ISPI Next jest zazwyczaj instalowany na dedykowanej stacji roboczej serwisu.
+
+*   **Wymagania systemowe:** Wymaga wydajnego komputera z szybkim i stabilnym połączeniem internetowym, zapewniającym ciągłą synchronizację danych.
+*   **Dostęp legalny:** Ograniczony do autoryzowanych dealerów i partnerów serwisowych Grupy BMW.
+
+## 6. Ogólny przebieg pracy / Typowe procedury
+
+1.  **Logowanie:** Technik loguje się do platformy ISPI Next.
+2.  **Wybór aplikacji:** Technik wybiera odpowiednią aplikację (np. **ISTA/D** do diagnostyki).
+3.  **Połączenie z pojazdem:** ISPI Next zarządza połączeniem z pojazdem poprzez zarezerwowaną jednostkę **ICOM**.
+4.  **Synchronizacja danych:** Dane pojazdu i historia serwisowa są synchronizowane z zapleczem BMW.
+
+## 7. Kluczowe ekrany / Elementy interfejsu
+
+*   **Launcher aplikacji:** Panel główny z dostępem do wszystkich aplikacji serwisowych.
+*   **Historia pojazdu:** Centralny widok historii serwisowej i programowania pojazdu.
+
+## 8. Bezpieczeństwo i ryzyka
+
+Główne ryzyka związane z ISPI Next dotyczą integralności danych i bezpieczeństwa sieciowego.
+
+*   **Utrata danych:** Brak synchronizacji z serwerem BMW może prowadzić do utraty historii serwisowej.
+*   **Bezpieczeństwo sieci:** Jako platforma połączona z siecią, wymaga ścisłego przestrzegania zasad bezpieczeństwa IT.
+
+## 9. Rozwiązywanie problemów / Typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **Błąd aktualizacji** | ISPI Next nie może pobrać lub zainstalować aktualizacji aplikacji. | Sprawdź połączenie internetowe i ustawienia zapory. Upewnij się, że dostępne jest wystarczająco dużo miejsca na dysku. |
+| **Błąd logowania** | Nie można uwierzytelnić połączenia z zapleczem BMW. | Sprawdź dane logowania i upewnij się, że zegar systemowy jest zsynchronizowany. |
+
+## 10. Przykłady i uwagi praktyczne
+
+*   **Centralne raportowanie:** ISPI Next umożliwia generowanie centralnych raportów dotyczących operacji serwisowych i problemów technicznych.
+
+## 11. Źródła / Dalsze informacje
+
+*   [1] **BMW Group Service Information:** Oficjalna dokumentacja architektury platformy ISPI Next.
+
+## 12. Dziennik zmian / Wersjonowanie
+
+ISPI Next jest stale aktualizowany w celu integracji nowych aplikacji serwisowych i poprawy efektywności pracy.
+
+## 13. Rola
+
+ISPI Next to **centralna platforma** wykorzystywana przez cały autoryzowany personel serwisowy BMW.
+
+---
+*Zobacz także: [ISTA/D](../tools/ista-d.md), [ISTA/P](../tools/ista-p.md), [Glosariusz](../glossary.md)*

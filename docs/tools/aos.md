@@ -1,4 +1,10 @@
-##EN
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+# 🇬🇧 English version
 # AOS (Aftersales Online System)
 
 ## 1. Title and Short Description
@@ -76,7 +82,7 @@ AOS is the **Official Gateway** for independent service providers to legally acc
 ---
 *See also: [AIR](../tools/air.md), [Glossary](../glossary.md)*
 
-##PL
+# 🇵🇱 Polska wersja
 # AOS (Aftersales Online System)
 
 ## 1. Tytuł i krótki opis

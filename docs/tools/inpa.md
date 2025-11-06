@@ -1,3 +1,10 @@
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+# 🇬🇧 English version
 # INPA (Integrated Service Technical Application / INPA)
 
 ## 1. Title and Short Description
@@ -81,3 +88,89 @@ INPA is used by **Advanced Technicians** and **Enthusiasts** who require quick, 
 
 ---
 *See also: [Tool32](../tools/tool32.md), [Glossary](../glossary.md)*
+
+
+# 🇵🇱 Polska wersja
+# INPA (Integrated Service Technical Application / INPA)
+
+## 1. Tytuł i krótki opis
+
+**INPA** (Integrated Service Technical Application / INPA) to starsze narzędzie diagnostyczne i serwisowe opracowane przez BMW. Zapewnia tekstowy, niskopoziomowy interfejs do bezpośredniej komunikacji z jednostkami sterującymi (**ECU**) w starszych pojazdach BMW. Znane jest z możliwości odczytu danych w czasie rzeczywistym i wykonywania prostych aktywacji, które mogą być niedostępne w nowszym systemie **ISTA/D**.
+
+## 2. Cel / Zastosowania
+
+INPA jest wykorzystywane głównie do szybkiej diagnostyki i niskopoziomowych testów komponentów w pojazdach serii E.
+
+*   **Dane w czasie rzeczywistym:** Odczyt bieżących danych z czujników, parametrów silnika i flag statusowych.
+*   **Odczyt kodów błędów:** Odczyt i kasowanie kodów błędów (**DTC**) bezpośrednio z jednostki **ECU**.
+*   **Aktywacja komponentów:** Wykonywanie prostych aktywacji (np. test cewek, przekaźników lub świateł).
+*   **Funkcje serwisowe:** Wykonywanie podstawowych funkcji serwisowych, takich jak resetowanie interwałów przeglądowych.
+
+## 3. Obsługiwane generacje pojazdów
+
+INPA jest narzędziem przeznaczonym głównie dla starszych pojazdów **serii E**. Jego funkcjonalność w przypadku serii F i nowszych jest ograniczona.
+
+| Generacja | Obsługa komunikacji | Uwagi |
+| :--- | :--- | :--- |
+| **Seria E** | D-CAN, K-Line | Pełna funkcjonalność |
+| **Seria F** | Ograniczona | Możliwy tylko odczyt podstawowych danych przez **ENET** po odpowiedniej konfiguracji. |
+
+## 4. Interfejsy i protokoły
+
+INPA korzysta ze starszych protokołów komunikacyjnych.
+
+*   **Kabel K-DCAN:** Standardowy interfejs dla INPA, obsługujący zarówno **K-Line** (starsze E-serie), jak i **D-CAN** (nowsze E-serie).
+*   **Protokoły:** K-Line (ISO 9141) oraz D-CAN (ISO 15765).
+
+## 5. Instalacja i dostęp
+
+INPA jest częścią starszego pakietu narzędzi **EDIABAS**.
+
+*   **Wymagania systemowe:** Zazwyczaj działa w systemach Windows XP/7. Wymaga poprawnie skonfigurowanego interfejsu **EDIABAS**.
+*   **Dostęp legalny:** INPA została zastąpiona przez ISTA/D i nie jest już aktywnie dystrybuowana przez BMW AG do użytku serwisowego.
+
+## 6. Ogólny przebieg pracy / Typowe procedury
+
+1.  **Podłącz K-DCAN:** Podłącz kabel K-DCAN do pojazdu i komputera serwisowego.
+2.  **Wybierz model:** Uruchom INPA i wybierz odpowiednie podwozie oraz typ silnika.
+3.  **Wybierz ECU:** Wybierz konkretną jednostkę sterującą (**ECU**) do komunikacji (np. **DME** dla elektroniki silnika).
+4.  **Odczytaj status:** Użyj klawiszy funkcyjnych (F1–F10), aby nawigować po menu i odczytać pamięć błędów lub dane w czasie rzeczywistym.
+
+## 7. Kluczowe ekrany / Elementy interfejsu
+
+*   **Klawisze funkcyjne:** Główna metoda nawigacji – każdy klawisz odpowiada konkretnej funkcji (np. F4 – pamięć błędów, F5 – status).
+*   **Interfejs tekstowy:** Charakterystyczny prosty interfejs tekstowy o kolorystyce zielony na czarnym tle.
+
+## 8. Bezpieczeństwo i ryzyka
+
+INPA to narzędzie niskopoziomowe, umożliwiające bezpośredni, niekierowany dostęp do funkcji **ECU**.
+
+*   **Brak prowadzenia użytkownika:** W przeciwieństwie do ISTA/D, INPA nie zawiera procedur krok po kroku. Nieprawidłowe użycie funkcji aktywacji może spowodować uszkodzenie komponentów.
+*   **Napięcie:** Choć INPA nie służy do programowania, wymagane jest stabilne napięcie, aby uniknąć błędów komunikacji.
+
+## 9. Rozwiązywanie problemów / Typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **IFH-0009: No Response from Control Unit** | INPA nie może nawiązać komunikacji. | Sprawdź konfigurację **EDIABAS** (`obd.ini` i `ediabas.ini`). Upewnij się, że sterowniki kabla K-DCAN są zainstalowane i że kabel przypisany jest do właściwego portu COM. |
+| **INPA wyświetla się niepoprawnie** | Brakujące lub błędne skrypty. | Upewnij się, że w katalogu instalacyjnym INPA znajdują się poprawne pliki **SGDAT** i **CFGDAT** dla wybranego modelu. |
+
+## 10. Przykłady i uwagi praktyczne
+
+*   **Korekty wtryskiwaczy:** INPA często wykorzystywana jest do szybkiego odczytu wartości korekcji wtryskiwaczy w silnikach benzynowych i wysokoprężnych.
+*   **Reset akumulatora:** Może być używana do resetowania rejestracji akumulatora w niektórych pojazdach serii E.
+
+## 11. Źródła / Dalsze informacje
+
+*   [1] **Dokumentacja EDIABAS:** Dokumentacja techniczna warstwy komunikacyjnej.
+
+## 12. Dziennik zmian / Wersjonowanie
+
+INPA to narzędzie przestarzałe i nie jest już aktywnie rozwijane ani aktualizowane przez BMW AG.
+
+## 13. Rola
+
+INPA jest używana przez **zaawansowanych techników** oraz **entuzjastów**, którzy potrzebują szybkiego, niskopoziomowego dostępu do pojazdów serii E.
+
+---
+*Zobacz także: [Tool32](../tools/tool32.md), [Glosariusz](../glossary.md)*

@@ -1,3 +1,11 @@
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+
+# 🇬🇧 English version
 # WinKFP (Windows Comfort Flash Program)
 
 ## 1. Title and Short Description
@@ -83,3 +91,92 @@ WinKFP is used by **Advanced Technicians** and **Enthusiasts** for low-level pro
 
 ---
 *See also: [NCS Expert](../tools/ncs-expert.md), [Tool32](../tools/tool32.md), [Glossary](../glossary.md)*
+
+
+
+# 🇵🇱 Polska wersja
+# WinKFP (Windows Comfort Flash Program)
+
+## 1. Tytuł i krótki opis
+
+**WinKFP** (Windows Comfort Flash Program) to starsze oprogramowanie BMW Group używane do **programowania** (flashowania) poszczególnych sterowników elektronicznych (**ECU**) w pojazdach serii **E**. Działa na niskim poziomie, umożliwiając użytkownikowi wybór konkretnego **ECU** i wgranie do niego odpowiedniego pliku programu (**.PRG**) oraz pliku danych (**.DAT**).
+
+## 2. Cel / Zastosowania
+
+WinKFP to dedykowane narzędzie do flashowania sterowników (**ECU**), wykorzystywane głównie do:
+
+*   **Aktualizacji oprogramowania:** Wgrywanie najnowszej wersji oprogramowania do pojedynczego **ECU**.
+*   **Wymiany modułu:** Programowanie nowego, pustego **ECU** właściwym oprogramowaniem dla danego pojazdu.
+*   **Downgrade’u:** W niektórych przypadkach WinKFP pozwala wgrać starszą wersję oprogramowania do **ECU**.
+
+## 3. Obsługiwane generacje pojazdów
+
+WinKFP przeznaczony jest dla starszych pojazdów z serii **E**. W nowszych generacjach został zastąpiony przez **ISTA/P** i **E-SYS**.
+
+| Generacja | Zakres programowania | Wymagany interfejs |
+| :--- | :--- | :--- |
+| **E-seria** | Pełne programowanie pojedynczych **ECU** | K-DCAN, ICOM (D-CAN) |
+| **F-seria** | Nieobsługiwana | Programowanie realizowane przez **ISTA/P** lub **E-SYS**. |
+
+## 4. Interfejsy i protokoły
+
+WinKFP korzysta z interfejsu **EDIABAS** do komunikacji.
+
+*   **K-DCAN Cable:** Standardowy interfejs dla serii E.  
+*   **ICOM (D-CAN):** Zapewnia stabilniejsze połączenie, szczególnie zalecane przy programowaniu.  
+*   **Protokoły:** K-Line i D-CAN.
+
+## 5. Instalacja i dostęp
+
+WinKFP jest częścią starszego pakietu narzędzi **EDIABAS**.
+
+*   **Wymagania systemowe:** System operacyjny Windows z poprawnie skonfigurowanym interfejsem **EDIABAS**.  
+*   **Dostępność prawna:** Jak inne narzędzia EDIABAS, WinKFP nie jest już oficjalnie dystrybuowany przez BMW AG do ogólnego użytku serwisowego.
+
+## 6. Ogólny przebieg pracy / typowe procedury
+
+1.  **Podłącz interfejs:** Podłącz **K-DCAN** lub **ICOM** oraz **stabilne zasilanie** (min. 13,5V).  
+2.  **Wybierz ECU:** Wybierz rodzinę sterowników, np. **DME** dla elektroniki silnika.  
+3.  **Wybierz program:** Wskaż odpowiedni plik programu (**.PRG**) do flashowania.  
+4.  **Sprawdź numer ZB:** Zweryfikuj poprawność numeru ZB (numer części oprogramowania) dla wybranego **ECU**.  
+5.  **Programuj:** Rozpocznij proces programowania. **NIE PRZERYWAJ PROCESU!**
+
+## 7. Kluczowe elementy interfejsu
+
+*   **Tryb Comfort:** Umożliwia programowanie na podstawie numeru **VIN** lub numeru **ZB**, co upraszcza proces.  
+*   **Tryb Expert:** Umożliwia ręczny wybór sterownika i pliku programu.
+
+## 8. Bezpieczeństwo i ryzyko
+
+WinKFP to narzędzie wysokiego ryzyka ze względu na niskopoziomowy dostęp i krytyczny charakter procesu programowania.
+
+*   **Zasilanie:** **KLUCZOWE!** Spadek napięcia podczas programowania prawie zawsze prowadzi do nieudanego flasha i **uszkodzenia ECU**.  
+*   **Przerwanie procesu:** Proces programowania **NIE MOŻE** zostać przerwany.  
+*   **Numer ZB:** Wgranie niepoprawnego numeru ZB może spowodować poważne błędy w działaniu sterownika.
+
+## 9. Rozwiązywanie problemów i typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **Error 200: IFH-0009: No Response from Control Unit** | Brak komunikacji z jednostką sterującą. | Sprawdź konfigurację **EDIABAS**, połączenie interfejsu i stan zapłonu. |
+| **Error 211: Program Status Invalid** | Wybrany plik programu jest niepoprawny lub niezgodny z **ECU**. | Zweryfikuj numer ZB i upewnij się, że zainstalowano odpowiednie dane **SP-Daten**. |
+
+## 10. Przykłady i notatki praktyczne
+
+*   **Aktualizacja DME:** Aktualizacja oprogramowania elektronicznego sterownika silnika (**DME**) do najnowszej wersji.  
+*   **Inicjalizacja modułu:** Programowanie nowego, nieużywanego **ECU**, które następnie można zakodować w **NCS Expert**.
+
+## 11. Źródła / dalsza lektura
+
+*   [1] **BMW SP-Daten:** Oficjalne pakiety danych zawierające pliki programów i danych dla wszystkich **ECU**.
+
+## 12. Historia zmian / wersjonowanie
+
+WinKFP to narzędzie archiwalne, nie jest już rozwijane. Aktualizacje ograniczają się do społecznościowych aktualizacji plików **SP-Daten**.
+
+## 13. Rola
+
+WinKFP jest używany przez **zaawansowanych techników** i **entuzjastów** do niskopoziomowego programowania sterowników serii **E**.
+
+---
+*Zobacz także: [NCS Expert](../tools/ncs-expert.md), [Tool32](../tools/tool32.md), [Słownik](../glossary.md)*

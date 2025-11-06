@@ -1,6 +1,7 @@
 # 🌍 Wybierz język / Choose language
 
 [🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+#
 
 # 🇬🇧 English version
 # AIR (Aftersales Information Research)

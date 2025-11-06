@@ -1,3 +1,10 @@
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+# 🇬🇧 English version
 # NCS Expert (Non-Coding Software Expert)
 
 ## 1. Title and Short Description
@@ -85,3 +92,95 @@ NCS Expert is used by **Advanced Enthusiasts** and **Specialized Technicians** f
 
 ---
 *See also: [INPA](../tools/inpa.md), [Tool32](../tools/tool32.md), [Glossary](../glossary.md)*
+
+
+
+
+# 🇵🇱 Polska wersja
+# NCS Expert (Non-Coding Software Expert)
+
+## 1. Tytuł i krótki opis
+
+**NCS Expert** (Non-Coding Software Expert) to starsze oprogramowanie Grupy BMW służące do **kodowania** i personalizacji modułów elektronicznych (**ECU**) w pojazdach serii **E**. Umożliwia zaawansowanym użytkownikom odczytanie aktualnej konfiguracji pojazdu oraz zapis nowych parametrów do modułów **ECU** przy użyciu plików profili kodowania.
+
+## 2. Cel / Zastosowania
+
+NCS Expert to potężne, niskopoziomowe narzędzie do modyfikowania funkcji pojazdu.
+
+*   **Kodowanie niestandardowe:** Aktywacja lub dezaktywacja wybranych funkcji (np. cyfrowy prędkościomierz, światła doświetlające zakręty, ostrzeżenie o pasach bezpieczeństwa).  
+*   **Wymiana modułu:** Kodowanie nowego lub używanego **ECU** w celu dopasowania go do **VO** (Vehicle Order) pojazdu.  
+*   **Kodowanie profilowe:** Używanie różnych profili (np. *Expert Mode*, *Manipulation*) do kontroli zakresu i sposobu kodowania.  
+
+## 3. Obsługiwane generacje pojazdów
+
+NCS Expert działa wyłącznie z pojazdami **E-series**. Nie jest kompatybilny z nowszymi modelami (seria F i G), w których używa się programu **E-SYS**.
+
+| Generacja | Obsługiwane protokoły | Uwagi |
+| :--- | :--- | :--- |
+| **E-series** | D-CAN, K-Line | Pełna funkcjonalność |
+| **F-series** | Nieobsługiwana | Kodowanie odbywa się przez **E-SYS** |
+
+## 4. Interfejsy i protokoły
+
+NCS Expert wykorzystuje starsze protokoły komunikacyjne oraz interfejs **EDIABAS**.
+
+*   **Kabel K-DCAN:** Standardowy interfejs do połączenia z pojazdem, obsługujący zarówno **K-Line**, jak i **D-CAN**.  
+*   **Protokoły:** K-Line (ISO 9141) i D-CAN (ISO 15765).  
+
+## 5. Instalacja i dostęp
+
+NCS Expert jest częścią starszego zestawu narzędzi **EDIABAS**.
+
+*   **Wymagania systemowe:** System Windows (zazwyczaj XP lub 7) oraz poprawnie skonfigurowany interfejs **EDIABAS**.  
+*   **Dostęp legalny:** Oprogramowanie to zostało zastąpione przez **ISTA/P** i **E-SYS**, dlatego nie jest już oficjalnie dystrybuowane przez BMW AG.  
+
+## 6. Ogólny przebieg pracy / Typowe procedury
+
+1.  **Podłącz K-DCAN:** Podłącz kabel do pojazdu i komputera serwisowego.  
+2.  **Uruchom NCS Expert:** Wybierz odpowiedni profil (np. **Expert Mode**).  
+3.  **Wybierz podwozie:** Określ kod serii (np. E90).  
+4.  **Wybierz moduł:** Wskaż moduł **ECU** do kodowania (np. **CAS**, **FRM**).  
+5.  **Odczytaj moduł:** Pobierz aktualne dane kodowania (**FSW_PSW.TRC**).  
+6.  **Edytuj dane:** Zmień parametry w pliku śledzenia lub użyj gotowego pliku **.MAN**.  
+7.  **Zakoduj moduł:** Zapisz zmodyfikowane dane do **ECU**.  
+
+## 7. Kluczowe ekrany / Elementy interfejsu
+
+*   **Wybór profilu:** Określa sposób pracy (np. tylko odczyt, pełne kodowanie).  
+*   **Wybór podwozia:** Pozwala zdefiniować typ pojazdu.  
+*   **Wybór zadania (Job):** Określa konkretną operację (np. `SG_CODIEREN` – kodowanie modułu).  
+
+## 8. Bezpieczeństwo i ryzyka
+
+NCS Expert jest narzędziem o wysokim ryzyku, ponieważ zapewnia bezpośredni dostęp do modułów bez procedur ochronnych.
+
+*   **Ryzyko uszkodzenia modułu:** Przerwanie procesu zapisu lub błędne dane mogą trwale uszkodzić **ECU**.  
+*   **Niezgodność VO:** Kodowanie z użyciem niewłaściwego **VO** może powodować błędy funkcjonalne i kontrolki ostrzegawcze.  
+*   **Kopia zapasowa:** Zawsze należy zapisać oryginalny plik kodowania (**FSW_PSW.TRC**) przed wprowadzeniem zmian.  
+
+## 9. Rozwiązywanie problemów / Typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **VIN is Faulty** | Program nie może odczytać numeru VIN lub VO. | Sprawdź konfigurację **EDIABAS**, połączenie kabla **K-DCAN** oraz czy zapłon jest włączony. |
+| **COAPI-1020: Error in ECU-ID** | Program nie może zidentyfikować wybranego modułu **ECU**. | Upewnij się, że wybrano poprawne podwozie i moduł. Zaktualizuj pliki **DATEN**. |
+
+## 10. Przykłady i uwagi praktyczne
+
+*   **Cyfrowy prędkościomierz:** Aktywacja cyfrowego wyświetlania prędkości w zestawie wskaźników (**KOMBI**).  
+*   **Jasność ringów:** Zmiana jasności świateł do jazdy dziennej (**FRM**).  
+
+## 11. Źródła / Dalsze informacje
+
+*   [1] **BMW Coding Forums:** Społecznościowe źródła wiedzy o parametrach kodowania i plikach profili.  
+
+## 12. Dziennik zmian / Wersjonowanie
+
+NCS Expert to narzędzie archiwalne i nie jest już rozwijane. Aktualizacje ograniczają się do społecznościowych aktualizacji plików **DATEN**.  
+
+## 13. Rola
+
+NCS Expert jest używany przez **zaawansowanych entuzjastów** oraz **specjalistycznych techników** do głębokiej personalizacji pojazdów serii E.  
+
+---
+*Zobacz także: [INPA](../tools/inpa.md), [Tool32](../tools/tool32.md), [Glosariusz](../glossary.md)*

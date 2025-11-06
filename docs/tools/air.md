@@ -1,4 +1,8 @@
-## EN
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+# 🇬🇧 English version
 # AIR (Aftersales Information Research)
 ## 1. Title and Short Description
 
@@ -72,11 +76,9 @@ AIR is a **Critical Support Tool** for all BMW service personnel, providing the 
 
 ---
 *See also: [AOS](../tools/aos.md), [ISTA/D](../tools/ista-d.md), [Glossary](../glossary.md)*
-# 
-# 
-# 
-# 
-## PL
+
+
+# 🇵🇱 Polska wersja
 # AIR (Aftersales Information Research)
 
 ## 1. Tytuł i krótki opis

@@ -1,3 +1,4 @@
+##EN
 # AIR (Aftersales Information Research)
 
 ## 1. Title and Short Description
@@ -72,3 +73,79 @@ AIR is a **Critical Support Tool** for all BMW service personnel, providing the 
 
 ---
 *See also: [AOS](../tools/aos.md), [ISTA/D](../tools/ista-d.md), [Glossary](../glossary.md)*
+
+##PL
+# AIR (Aftersales Information Research)
+
+## 1. Tytuł i krótki opis
+
+**AIR** (Aftersales Information Research) to kluczowy element ekosystemu posprzedażowego Grupy BMW, pełniący rolę repozytorium i wyszukiwarki informacji technicznych oraz serwisowych. Został zaprojektowany, aby zapewnić technikom szybki dostęp do obszernej bazy wiedzy potrzebnej do skomplikowanej diagnostyki i napraw.
+
+## 2. Cel / Zastosowania
+
+Głównym zadaniem AIR jest wspieranie procesu serwisowego poprzez dostarczanie dokumentacji technicznej na żądanie.
+
+*   **Dokumentacja techniczna:** Dostęp do instrukcji napraw, schematów elektrycznych, lokalizacji komponentów i biuletynów serwisowych (**TSB**).
+*   **Wyszukiwarka:** Zaawansowane narzędzie umożliwiające szybkie odnalezienie odpowiednich informacji na podstawie objawów, kodów błędów (**DTC**) lub nazw komponentów.
+*   **Integracja:** Często zintegrowany bezpośrednio z procesem pracy w **ISTA/D**, co pozwala technikom otworzyć odpowiednią dokumentację w trakcie prowadzonego planu testowego.
+
+## 3. Obsługiwane generacje pojazdów
+
+AIR obejmuje wszystkie generacje pojazdów, dla których BMW AG udostępnia oficjalną dokumentację serwisową.
+
+## 4. Interfejsy i protokoły
+
+AIR to głównie usługa oparta na sieci lub przeglądarce internetowej.
+
+*   **Dostęp sieciowy:** Wymaga stabilnego połączenia z serwerami zaplecza BMW.
+*   **Integracja:** Dostęp poprzez platformę **ISPI Next** lub bezpośrednio przez przeglądarkę internetową (dla użytkowników autoryzowanych).
+
+## 5. Instalacja i dostęp
+
+AIR jest usługą, a nie samodzielną aplikacją.
+
+*   **Wymagania systemowe:** Dostęp uzyskuje się zazwyczaj poprzez platformę **ISPI Next** lub portal **AOS**.
+*   **Dostęp legalny:** Dostęp jest ograniczony do autoryzowanych dealerów BMW, partnerów serwisowych oraz niezależnych operatorów, którzy wykupili dostęp przez **AOS** [1].
+
+## 6. Ogólny przebieg pracy / Typowe procedury
+
+1.  **Wyszukiwanie:** Technik wprowadza zapytanie (np. kod **DTC** lub objaw).
+2.  **Wyniki:** AIR zwraca listę odpowiednich dokumentów, instrukcji napraw i biuletynów technicznych.
+3.  **Zastosowanie:** Technik wykorzystuje uzyskane informacje do przeprowadzenia naprawy lub diagnostyki.
+
+## 7. Kluczowe ekrany / Elementy interfejsu
+
+*   **Pasek wyszukiwania:** Główne narzędzie do przeszukiwania bazy wiedzy.
+*   **Przeglądarka dokumentów:** Wyświetla instrukcje napraw, często z grafikami i krokami postępowania.
+
+## 8. Bezpieczeństwo i ryzyka
+
+Głównym ryzykiem jest korzystanie z nieaktualnych lub błędnych informacji.
+
+*   **Nieaktualne dane:** Technik musi upewnić się, że korzysta z najnowszej wersji dokumentacji, ponieważ procedury mogą zmieniać się wraz z aktualizacjami oprogramowania.
+
+## 9. Rozwiązywanie problemów / Typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **Brak wyników wyszukiwania** | Zapytanie jest zbyt szczegółowe lub informacja nie jest jeszcze dostępna. | Poszerz zakres wyszukiwania lub sprawdź powiązane **TSB**. |
+| **Odmowa dostępu** | Użytkownik nie ma wymaganej subskrypcji lub autoryzacji. | Zweryfikuj dane logowania i status subskrypcji **AOS**. |
+
+## 10. Przykłady i uwagi praktyczne
+
+*   **Biuletyny serwisowe (TSB):** AIR stanowi źródło wszystkich oficjalnych **TSB**, które opisują znane problemy i oficjalne procedury napraw.
+
+## 11. Źródła / Dalsze informacje
+
+*   [1] **BMW Aftersales Online System (AOS):** Portal, przez który niezależni operatorzy mogą wykupić dostęp do AIR. *Adres URL: https://aos.bmwgroup.com*
+
+## 12. Dziennik zmian / Wersjonowanie
+
+AIR jest na bieżąco aktualizowany wraz z wprowadzaniem nowych pojazdów i informacji technicznych.
+
+## 13. Rola
+
+AIR to **kluczowe narzędzie wsparcia** dla całego personelu serwisowego BMW, dostarczające niezbędną wiedzę techniczną do przeprowadzania napraw.
+
+---
+*Zobacz także: [AOS](../tools/aos.md), [ISTA/D](../tools/ista-d.md), [Glosariusz](../glossary.md)*

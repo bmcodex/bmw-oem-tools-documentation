@@ -1,3 +1,10 @@
+# 🌍 Wybierz język / Choose language
+
+[🇵🇱 Polski](#-polska-wersja) | [🇬🇧 English](#-english-version)
+
+#
+
+# 🇬🇧 English version
 # Tool32
 
 ## 1. Title and Short Description
@@ -85,3 +92,93 @@ Tool32 is used by **Expert Users** and **Engineers** for specialized, low-level 
 
 ---
 *See also: [INPA](../tools/inpa.md), [NCS Expert](../tools/ncs-expert.md), [Glossary](../glossary.md)*
+
+
+# 🇵🇱 Polska wersja
+# Tool32
+
+## 1. Tytuł i krótki opis
+
+**Tool32** to niskopoziomowe narzędzie wiersza poleceń opracowane przez BMW, będące częścią pakietu **EDIABAS**. Umożliwia bezpośrednią, niekierowaną komunikację z poszczególnymi modułami elektronicznymi (**ECU**) przy użyciu plików zadań (**.PRG**). To potężne, ale ryzykowne narzędzie, które omija prowadzone procedury znane z **ISTA/D** i **ISTA/P**.
+
+## 2. Cel / Zastosowania
+
+Tool32 służy do zaawansowanych, niskopoziomowych czynności diagnostycznych i serwisowych.
+
+*   **Bezpośrednia komunikacja z ECU:** Wysyłanie określonych komend (tzw. *jobs*) bez konieczności korzystania z planów testowych.  
+*   **Funkcje serwisowe:** Wykonywanie czynności niedostępnych w wyższych narzędziach (np. reset liczników błędów, aktywacja komponentów w niestandardowy sposób).  
+*   **Odczyt danych niskopoziomowych:** Dostęp do surowych danych i wewnętrznych statusów modułów **ECU**.  
+*   **Diagnostyka problemów:** Ustalanie źródła błędów komunikacyjnych lub specyficznych usterek modułów.  
+
+## 3. Obsługiwane generacje pojazdów
+
+Tool32 obsługuje wszystkie generacje pojazdów, które komunikują się poprzez interfejs **EDIABAS**, w tym serie E, F i G.
+
+| Generacja | Obsługiwane interfejsy | Uwagi |
+| :--- | :--- | :--- |
+| **E-series** | D-CAN, K-Line | Pełna funkcjonalność |
+| **F/G-series** | ENET, ICOM | Wymaga poprawnej konfiguracji **EDIABAS** dla komunikacji **ENET** |
+
+## 4. Interfejsy i protokoły
+
+Tool32 opiera się na interfejsie **EDIABAS**.
+
+*   **Kabel K-DCAN:** Dla pojazdów serii E.  
+*   **Kabel ENET:** Dla pojazdów serii F i G.  
+*   **ICOM:** Zalecany dla stabilnej komunikacji w każdej generacji.  
+*   **Protokoły:** K-Line, D-CAN, ENET.  
+
+## 5. Instalacja i dostęp
+
+Tool32 jest częścią starszego zestawu narzędzi **EDIABAS**.
+
+*   **Wymagania systemowe:** System Windows z poprawnie skonfigurowanym interfejsem **EDIABAS**.  
+*   **Dostęp legalny:** Tak jak inne narzędzia EDIABAS, Tool32 został zastąpiony przez **ISTA/D** i **E-SYS** i nie jest już oficjalnie dystrybuowany przez BMW AG.  
+
+## 6. Ogólny przebieg pracy / Typowe procedury
+
+1.  **Podłącz interfejs:** Podłącz **K-DCAN**, **ENET** lub **ICOM**.  
+2.  **Uruchom Tool32:** Otwórz aplikację.  
+3.  **Załaduj plik zadań:** Wczytaj odpowiedni plik **.PRG** (np. `DME.PRG` dla sterownika silnika).  
+4.  **Wybierz zadanie:** Wskaż żądaną funkcję z listy (np. `steuern_reset_adaptionen` – reset adaptacji).  
+5.  **Wykonaj zadanie:** Uruchom komendę – wynik (status, wartości zwrotne) pojawi się w oknie wyników.  
+
+## 7. Kluczowe ekrany / Elementy interfejsu
+
+*   **Okno zadań (Job Window):** Lista wszystkich dostępnych zadań dla załadowanego pliku **ECU**.  
+*   **Okno wyników (Results Window):** Pokazuje status i wyniki po wykonaniu zadania.  
+*   **Okno argumentów (Arguments Window):** Służy do wprowadzania parametrów wymaganych przez niektóre komendy.  
+
+## 8. Bezpieczeństwo i ryzyka
+
+Tool32 jest narzędziem wysokiego ryzyka ze względu na brak zabezpieczeń i bezpośredni dostęp do funkcji modułów.
+
+*   **Brak prowadzenia użytkownika:** Nie ma żadnych zabezpieczeń ani ostrzeżeń — błędne zadanie może uszkodzić moduł, komponent lub nawet zablokować **ECU**.  
+*   **Stabilne napięcie:** Niezbędne do uniknięcia błędów komunikacji podczas wykonywania komend.  
+
+## 9. Rozwiązywanie problemów / Typowe błędy
+
+| Błąd | Opis | Diagnoza / Rozwiązanie |
+| :--- | :--- | :--- |
+| **Error: API-0001** | Błąd komunikacji z interfejsem **EDIABAS**. | Sprawdź konfigurację **EDIABAS** i poprawność połączenia interfejsu. |
+| **Job Not Found** | Wybrane zadanie nie istnieje w załadowanym pliku **.PRG**. | Upewnij się, że wczytano poprawny plik **ECU** i wpisano właściwą nazwę zadania. |
+
+## 10. Przykłady i uwagi praktyczne
+
+*   **Reset licznika zwarć FRM:** Używane do zresetowania licznika zwarć w module świateł **FRM** po wymianie żarówki – funkcja często niedostępna w ISTA/D.  
+*   **Odczyt danych wtryskiwaczy:** Pozwala odczytać szczegółowe dane i statusy wtryskiwaczy, niedostępne w wyższych narzędziach.  
+
+## 11. Źródła / Dalsze informacje
+
+*   [1] **Dokumentacja EDIABAS:** Oficjalne materiały techniczne dotyczące warstwy komunikacyjnej.  
+
+## 12. Dziennik zmian / Wersjonowanie
+
+Tool32 to narzędzie archiwalne, które nie jest już rozwijane. Jego funkcje są obecnie zintegrowane z **ISTA/D** lub realizowane przez **E-SYS**.  
+
+## 13. Rola
+
+Tool32 jest używany przez **ekspertów i inżynierów** do specjalistycznych, niskopoziomowych czynności diagnostycznych i serwisowych.  
+
+---
+*Zobacz także: [INPA](../tools/inpa.md), [NCS Expert](../tools/ncs-expert.md), [Glosariusz](../glossary.md)*
